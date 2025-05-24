@@ -1,0 +1,134 @@
+--zadanie 1
+--Stworz widok v_wysokie_pensje dla wszystkich pracownikow zarabiajacych > 6000
+CREATE OR REPLACE VIEW v_wysokie_pensje AS
+SELECT *
+FROM employees
+WHERE salary > 6000;
+/
+
+--zadanie 2
+--Zmien definicje tego samego widoku, aby pokazywal tylko pracownikow zarabiajacych > 12000
+CREATE OR REPLACE VIEW v_wysokie_pensje AS
+SELECT *
+FROM employees
+WHERE salary > 12000;
+
+--zadanie 3
+--Usun widok v_wysokie_pensje
+DROP VIEW v_wysokie_pensje;
+
+--zadanie 4
+--Widok z employee_id, last_name, first_name dla pracownikow z dzialu „Finance”
+CREATE OR REPLACE VIEW v_finance_employees AS
+SELECT e.employee_id,
+       e.last_name,
+       e.first_name
+FROM employees e
+JOIN departments d ON e.department_id = d.department_id
+WHERE d.department_name = 'Finance';
+
+-- zadanie 5
+--Widok z employee_id, last_name, first_name, salary, job_id, email, hire_date dla pracownikow z zarobkami BETWEEN 5000 AND 12000
+CREATE OR REPLACE VIEW v_midrange_employees AS
+SELECT employee_id,
+       last_name,
+       first_name,
+       salary,
+       job_id,
+       email,
+       hire_date
+FROM employees
+WHERE salary BETWEEN 5000 AND 12000;
+
+--zadanie 6
+--Poprzez utworzone widoki sprawdź czy możesz:
+--6a: Dodanie nowego pracownika
+INSERT INTO v_midrange_employees
+  (employee_id, last_name, first_name, salary, job_id, email, hire_date, department_id)
+VALUES
+  (9999, 'Nowy', 'Pracownik', 5500, 'ST_CLERK', 'np@example.com', SYSDATE, 50);
+
+ --6b: Edytowanie pracownika
+UPDATE v_midrange_employees
+SET salary = 6000
+WHERE employee_id = 9999;
+
+-- 6c. usuwanie pracownika
+DELETE FROM v_midrange_employees
+WHERE employee_id = 9999;
+
+-- 7 zadanie
+--Stworz widok, ktory dla kazdego dzialu ktory zatrudnia przynajmniej 4 pracownikow wyswietli: identyfi kator dzialu, nazwe dzialu, liczbe pracownikow w dziale, srednia pensja w dziale i najwyzsza pensja w dziale.
+CREATE OR REPLACE VIEW v_dept_stats AS
+SELECT d.department_id,
+       d.department_name,
+       COUNT(e.employee_id)      AS num_employees,
+       ROUND(AVG(e.salary), 2)   AS avg_salary,
+       MAX(e.salary)             AS max_salary
+FROM departments d
+JOIN employees   e ON d.department_id = e.department_id
+GROUP BY d.department_id, d.department_name
+HAVING COUNT(e.employee_id) >= 4;
+
+-- 7a: Test INSERT na v_dept_stats
+INSERT INTO v_dept_stats(department_id, department_name, num_employees, avg_salary, max_salary)
+VALUES (123, 'X', 4, 5000, 7000);
+
+--zadanie 8
+--Stworz analogiczny widok zadania 3 z dodaniem warunku ‘WITH CHECK OPTION’.
+CREATE OR REPLACE VIEW v_midrange_employees_chk AS
+SELECT employee_id,
+       last_name,
+       first_name,
+       salary,
+       job_id,
+       email,
+       hire_date,
+       department_id
+FROM employees
+WHERE salary BETWEEN 5000 AND 12000
+WITH CHECK OPTION;
+
+--8a: Sprawdz czy mozesz dodac pracownika z zarobkami pomiedzy 5000 a 12000.
+INSERT INTO v_midrange_employees_chk
+  (employee_id, last_name, first_name, salary, job_id, email, hire_date, department_id)
+VALUES (8888, 'Test', 'Check', 6000, 'AC_ACCOUNT', 'tc@example.com', SYSDATE, 60);
+
+-- 8b: Sprawdz czy mozesz dodać pracownika z zarobkami powyżej 12000
+INSERT INTO v_midrange_employees_chk
+  (employee_id, last_name, first_name, salary, job_id, email, hire_date, department_id)
+VALUES (8889, 'Test2', 'Fail', 13000, 'AC_ACCOUNT', 'tf@example.com', SYSDATE, 60);
+
+--zadanie 9
+--Utworz widok zmaterializowany v_managerowie, ktory pokaze tylko menedzerow w raz z nazwami ich dzialow.
+CREATE MATERIALIZED VIEW v_managerowie
+BUILD IMMEDIATE
+REFRESH FAST ON COMMIT
+AS
+SELECT DISTINCT m.employee_id,
+                m.first_name,
+                m.last_name,
+                d.department_name
+FROM employees m
+JOIN departments d ON m.department_id = d.department_id
+WHERE EXISTS (
+  SELECT 1
+  FROM employees e
+  WHERE e.manager_id = m.employee_id
+);
+
+--zadanie 10
+--Stworz widok v_najlepiej_oplacani, ktory zawiera tylko 10 najlepiej oplacanych pracownikow
+CREATE OR REPLACE VIEW v_najlepiej_oplacani AS
+SELECT *
+FROM (
+  SELECT employee_id,
+         first_name,
+         last_name,
+         salary,
+         job_id,
+         department_id
+  FROM employees
+  ORDER BY salary DESC
+)
+WHERE ROWNUM <= 10;

@@ -1,0 +1,40 @@
+--zadanie 1
+--Blok anonimowy
+DECLARE
+  numer_max    departments.department_id%TYPE;
+  v_dept_name  departments.department_name%TYPE := 'EDUCATION';
+BEGIN
+  SELECT MAX(department_id)
+    INTO numer_max
+    FROM departments;
+
+  INSERT INTO departments(department_id, department_name)
+  VALUES (numer_max + 10, v_dept_name);
+
+  --zadanie 2
+  --zmiana location_id na 3000 dla właśnie dodanego działu
+  UPDATE departments
+     SET location_id = 3000
+   WHERE department_id = numer_max + 10;
+
+  DBMS_OUTPUT.PUT_LINE(
+    'Dodano departament ID=' || (numer_max + 10)
+    || ', name=' || v_dept_name
+    || ', location_id=3000');
+END;
+
+--zadanie 3
+BEGIN
+  EXECUTE IMMEDIATE 'CREATE TABLE nowa (val VARCHAR2(10))';
+END;
+
+DECLARE
+  i NUMBER;
+BEGIN
+  FOR i IN 1..10 LOOP
+    IF i NOT IN (4, 6) THEN
+      INSERT INTO nowa(val) VALUES(TO_CHAR(i));
+    END IF;
+  END LOOP;
+  COMMIT;
+END;

@@ -1,0 +1,198 @@
+--Zadanie 1
+--przygotowac baze danych na podstawie podanego schematu
+CREATE TABLE regions (
+  region_id   NUMBER(4)     NOT NULL,
+  region_name VARCHAR2(25)  NOT NULL,
+  CONSTRAINT regions_pk PRIMARY KEY (region_id)
+);
+
+CREATE TABLE countries (
+  country_id   CHAR(2)       NOT NULL,
+  country_name VARCHAR2(40)  NOT NULL,
+  region_id    NUMBER(4)     NOT NULL,
+  CONSTRAINT countries_pk PRIMARY KEY (country_id)
+);
+
+ALTER TABLE countries
+  ADD CONSTRAINT countries_regions_fk
+    FOREIGN KEY (region_id)
+    REFERENCES regions (region_id);
+
+CREATE TABLE locations (
+  location_id    NUMBER(6)     NOT NULL,
+  street_address VARCHAR2(40),
+  postal_code    VARCHAR2(12),
+  city           VARCHAR2(30)  NOT NULL,
+  state_province VARCHAR2(25),
+  country_id     CHAR(2)       NOT NULL,
+  CONSTRAINT locations_pk PRIMARY KEY (location_id)
+);
+
+ALTER TABLE locations
+  ADD CONSTRAINT locations_countries_fk
+    FOREIGN KEY (country_id)
+    REFERENCES countries (country_id);
+
+CREATE TABLE jobs (
+  job_id     VARCHAR2(10)   NOT NULL,
+  job_title  VARCHAR2(35)   NOT NULL,
+  min_salary NUMBER(8,2),
+  max_salary NUMBER(8,2),
+  CONSTRAINT jobs_pk PRIMARY KEY (job_id)
+);
+
+ALTER TABLE jobs
+  ADD CONSTRAINT jobs_ck_salary
+    CHECK (max_salary - min_salary >= 2000);
+
+CREATE TABLE departments (
+  department_id   NUMBER(4)     NOT NULL,
+  department_name VARCHAR2(30)  NOT NULL,
+  manager_id      NUMBER(6),      -- FK dodamy dopiero po utworzeniu EMPLOYEES
+  location_id     NUMBER(6)     NOT NULL,
+  CONSTRAINT departments_pk PRIMARY KEY (department_id)
+);
+
+ALTER TABLE departments
+  ADD CONSTRAINT departments_locations_fk
+    FOREIGN KEY (location_id)
+    REFERENCES locations (location_id);
+
+CREATE TABLE employees (
+  employee_id    NUMBER(6)     NOT NULL,
+  first_name     VARCHAR2(20),
+  last_name      VARCHAR2(25)  NOT NULL,
+  email          VARCHAR2(25)  NOT NULL,
+  phone_number   VARCHAR2(20),
+  hire_date      DATE          NOT NULL,
+  job_id         VARCHAR2(10)  NOT NULL,
+  salary         NUMBER(8,2),
+  commission_pct NUMBER(2,2),
+  CONSTRAINT employees_pk PRIMARY KEY (employee_id)
+);
+
+ALTER TABLE employees
+  ADD (
+    manager_id    NUMBER(6),
+    department_id NUMBER(4)
+  );
+
+ALTER TABLE employees
+  ADD CONSTRAINT employees_jobs_fk
+    FOREIGN KEY (job_id)
+    REFERENCES jobs (job_id);
+
+ALTER TABLE employees
+  ADD CONSTRAINT employees_departments_fk
+    FOREIGN KEY (department_id)
+    REFERENCES departments (department_id);
+
+ALTER TABLE employees
+  ADD CONSTRAINT employees_mgr_fk
+    FOREIGN KEY (manager_id)
+    REFERENCES employees (employee_id);
+
+CREATE TABLE job_history (
+  employee_id   NUMBER(6)     NOT NULL,
+  start_date    DATE          NOT NULL,
+  end_date      DATE          NOT NULL,
+  job_id        VARCHAR2(10)  NOT NULL,
+  department_id NUMBER(4)     NOT NULL,
+  CONSTRAINT job_history_pk PRIMARY KEY (employee_id, start_date)
+);
+
+ALTER TABLE job_history
+  ADD CONSTRAINT job_history_emps_fk
+    FOREIGN KEY (employee_id)
+    REFERENCES employees (employee_id);
+
+ALTER TABLE job_history
+  ADD CONSTRAINT job_history_jobs_fk
+    FOREIGN KEY (job_id)
+    REFERENCES jobs (job_id);
+
+ALTER TABLE job_history
+  ADD CONSTRAINT job_history_depts_fk
+    FOREIGN KEY (department_id)
+    REFERENCES departments (department_id);
+
+ALTER TABLE departments
+  ADD CONSTRAINT departments_mgr_fk
+    FOREIGN KEY (manager_id)
+    REFERENCES employees (employee_id);
+
+
+--Zadanie 2
+--do tabeli JOBS wstawic 4 rekordy
+INSERT INTO JOBS (job_id, job_title, min_salary, max_salary)
+VALUES (1, 'Developer', 3000, 6000);
+
+INSERT INTO JOBS (job_id, job_title, min_salary, max_salary)
+VALUES (2, 'Tester', 2500, 5000);
+
+INSERT INTO JOBS (job_id, job_title, min_salary, max_salary)
+VALUES (3, 'Analyst', 3500, 6000);
+
+INSERT INTO JOBS (job_id, job_title, min_salary, max_salary)
+VALUES (4, 'Manager', 5000, 8000);
+
+
+--zadanie 3
+-- Wstawic 4 rekordy do tabeli employees
+INSERT INTO EMPLOYEES
+    (employee_id, first_name, last_name, email, phone_number,
+     hire_date, job_id, salary, commission_pct, manager_id, department_id)
+VALUES
+    (1, 'Jan', 'Kowalski', 'jan.kowalski@example.com', '123-456-789',
+     SYSDATE, 1, 4000, NULL, NULL, 10);
+
+INSERT INTO EMPLOYEES
+    (employee_id, first_name, last_name, email, phone_number,
+     hire_date, job_id, salary, commission_pct, manager_id, department_id)
+VALUES
+    (2, 'Anna', 'Nowak', 'anna.nowak@example.com', '987-654-321',
+     SYSDATE, 2, 3000, NULL, 1, 20);
+
+INSERT INTO EMPLOYEES
+    (employee_id, first_name, last_name, email, phone_number,
+     hire_date, job_id, salary, commission_pct, manager_id, department_id)
+VALUES
+    (3, 'Piotr', 'Wiśniewski', 'piotr.wisniewski@example.com', '111-222-333',
+     SYSDATE, 3, 3500, NULL, 2, 10);
+
+INSERT INTO EMPLOYEES
+    (employee_id, first_name, last_name, email, phone_number,
+     hire_date, job_id, salary, commission_pct, manager_id, department_id)
+VALUES
+    (4, 'Kasia', 'Zielińska', 'kasia.zielinska@example.com', '444-555-666',
+     SYSDATE, 4, 6000, NULL, 3, 30);
+
+
+--zadanie 4
+--W tabeli EMPLOYEES zmienic menadzera pracownikom o id 2 i 3 na 1,
+UPDATE EMPLOYEES
+SET manager_id = 1
+WHERE employee_id IN (2, 3);
+
+
+--zadanie 5
+--Dla tabeli JOBS zwiekszyc minimalne i maksymalne wynagrodzenie o 500 jesli nazwa zawiera ‘b’ lub ‘s’
+UPDATE JOBS
+SET min_salary = min_salary + 500,
+    max_salary = max_salary + 500
+WHERE LOWER(job_title) LIKE '%b%'
+   OR LOWER(job_title) LIKE '%s%';
+
+
+--zadanie 6
+--Z tabeli JOBS usunac rekordy, dla ktorych maksymalne zarobki są wieksze od 9000.
+DELETE FROM JOBS
+WHERE max_salary > 9000;
+
+
+--zadanie 7
+--usunac jedna z tabel i sprawdzic czy mozna ja odzyskac
+DROP TABLE JOB_HISTORY;
+SHOW RECYCLEBIN;
+FLASHBACK TABLE JOB_HISTORY
+    TO BEFORE DROP;
