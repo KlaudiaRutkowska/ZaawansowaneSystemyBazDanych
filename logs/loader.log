@@ -1,0 +1,357 @@
+2025-05-22 22:59:40,907 INFO: Przetworzono test_participants.csv -> D:\Studia\mgr\semestr 3\Zaawansowane Systemy Baz Danych\projekt\archive\test_participants.csv.20250522225940
+2025-05-22 22:59:41,931 INFO: Przetworzono test_speakers.json -> D:\Studia\mgr\semestr 3\Zaawansowane Systemy Baz Danych\projekt\archive\test_speakers.json.20250522225941
+2025-05-23 20:44:45,018 INFO: Processed test_participants.csv -> D:\Studia\mgr\semestr 3\Zaawansowane Systemy Baz Danych\projekt\archive\test_participants.csv.20250523204445
+2025-05-23 20:52:43,585 ERROR: Error processing row {'imie': 'Jan', 'nazwisko': 'Kowalski', 'email': 'jan.kowalski@example.com', 'pesel': '2345'}: ORA-20001: Invalid PESEL format: 2345
+ORA-06512: przy "INF2NS_RUTKOWSKAK.PKG_EXCEPTIONS", linia 10
+ORA-06512: przy "INF2NS_RUTKOWSKAK.TRG_UCZESTNICY_VALIDATE", linia 3
+ORA-04088: b³¹d w trakcie wykonywania wyzwalacza 'INF2NS_RUTKOWSKAK.TRG_UCZESTNICY_VALIDATE'
+2025-05-23 20:52:43,694 INFO: Processed test_participants.csv -> D:\Studia\mgr\semestr 3\Zaawansowane Systemy Baz Danych\projekt\archive\test_participants.csv.20250523205243
+2025-05-24 00:48:48,048 INFO: OK: konferencje.csv \u2192 D:\Studia\mgr\semestr 3\Zaawansowane Systemy Baz Danych\projekt\archive\konferencje.csv.20250524004847
+2025-05-24 00:48:51,268 INFO: OK: prelegenci.csv \u2192 D:\Studia\mgr\semestr 3\Zaawansowane Systemy Baz Danych\projekt\archive\prelegenci.csv.20250524004851
+2025-05-24 00:48:51,472 ERROR: [rejestracje] B³¹d wiersza {'konferencja_id': '1', 'uczestnik_id': '1', 'data_rejestracji': '2025-01-03'}: ORA-02291: naruszono wiêzy spójnoœci (INF2NS_RUTKOWSKAK.SYS_C00260027) - nie znaleziono klucza nadrzêdnego
+Help: https://docs.oracle.com/error-help/db/ora-02291/
+2025-05-24 00:48:51,677 ERROR: [rejestracje] B³¹d wiersza {'konferencja_id': '2', 'uczestnik_id': '2', 'data_rejestracji': '2025-01-04'}: ORA-02291: naruszono wiêzy spójnoœci (INF2NS_RUTKOWSKAK.SYS_C00260027) - nie znaleziono klucza nadrzêdnego
+Help: https://docs.oracle.com/error-help/db/ora-02291/
+2025-05-24 00:48:51,880 ERROR: [rejestracje] B³¹d wiersza {'konferencja_id': '3', 'uczestnik_id': '3', 'data_rejestracji': '2025-01-05'}: ORA-02291: naruszono wiêzy spójnoœci (INF2NS_RUTKOWSKAK.SYS_C00260027) - nie znaleziono klucza nadrzêdnego
+Help: https://docs.oracle.com/error-help/db/ora-02291/
+2025-05-24 00:48:52,085 ERROR: [rejestracje] B³¹d wiersza {'konferencja_id': '4', 'uczestnik_id': '4', 'data_rejestracji': '2025-01-06'}: ORA-02291: naruszono wiêzy spójnoœci (INF2NS_RUTKOWSKAK.SYS_C00260028) - nie znaleziono klucza nadrzêdnego
+Help: https://docs.oracle.com/error-help/db/ora-02291/
+2025-05-24 00:48:52,290 ERROR: [rejestracje] B³¹d wiersza {'konferencja_id': '5', 'uczestnik_id': '5', 'data_rejestracji': '2025-01-07'}: ORA-02291: naruszono wiêzy spójnoœci (INF2NS_RUTKOWSKAK.SYS_C00260027) - nie znaleziono klucza nadrzêdnego
+Help: https://docs.oracle.com/error-help/db/ora-02291/
+2025-05-24 00:48:52,496 ERROR: [rejestracje] B³¹d wiersza {'konferencja_id': '6', 'uczestnik_id': '6', 'data_rejestracji': '2025-01-08'}: ORA-02291: naruszono wiêzy spójnoœci (INF2NS_RUTKOWSKAK.SYS_C00260028) - nie znaleziono klucza nadrzêdnego
+Help: https://docs.oracle.com/error-help/db/ora-02291/
+2025-05-24 00:48:52,697 ERROR: [rejestracje] B³¹d wiersza {'konferencja_id': '7', 'uczestnik_id': '7', 'data_rejestracji': '2025-01-09'}: ORA-02291: naruszono wiêzy spójnoœci (INF2NS_RUTKOWSKAK.SYS_C00260028) - nie znaleziono klucza nadrzêdnego
+Help: https://docs.oracle.com/error-help/db/ora-02291/
+2025-05-24 00:48:52,904 ERROR: [rejestracje] B³¹d wiersza {'konferencja_id': '8', 'uczestnik_id': '8', 'data_rejestracji': '2025-01-10'}: ORA-02291: naruszono wiêzy spójnoœci (INF2NS_RUTKOWSKAK.SYS_C00260028) - nie znaleziono klucza nadrzêdnego
+Help: https://docs.oracle.com/error-help/db/ora-02291/
+2025-05-24 00:48:53,110 ERROR: [rejestracje] B³¹d wiersza {'konferencja_id': '9', 'uczestnik_id': '9', 'data_rejestracji': '2025-01-11'}: ORA-02291: naruszono wiêzy spójnoœci (INF2NS_RUTKOWSKAK.SYS_C00260028) - nie znaleziono klucza nadrzêdnego
+Help: https://docs.oracle.com/error-help/db/ora-02291/
+2025-05-24 00:48:53,313 ERROR: [rejestracje] B³¹d wiersza {'konferencja_id': '10', 'uczestnik_id': '10', 'data_rejestracji': '2025-01-12'}: ORA-02291: naruszono wiêzy spójnoœci (INF2NS_RUTKOWSKAK.SYS_C00260028) - nie znaleziono klucza nadrzêdnego
+Help: https://docs.oracle.com/error-help/db/ora-02291/
+2025-05-24 00:48:53,514 ERROR: [rejestracje] B³¹d wiersza {'konferencja_id': '11', 'uczestnik_id': '11', 'data_rejestracji': '2025-01-13'}: ORA-02291: naruszono wiêzy spójnoœci (INF2NS_RUTKOWSKAK.SYS_C00260027) - nie znaleziono klucza nadrzêdnego
+Help: https://docs.oracle.com/error-help/db/ora-02291/
+2025-05-24 00:48:53,725 ERROR: [rejestracje] B³¹d wiersza {'konferencja_id': '12', 'uczestnik_id': '12', 'data_rejestracji': '2025-01-14'}: ORA-02291: naruszono wiêzy spójnoœci (INF2NS_RUTKOWSKAK.SYS_C00260028) - nie znaleziono klucza nadrzêdnego
+Help: https://docs.oracle.com/error-help/db/ora-02291/
+2025-05-24 00:48:53,929 ERROR: [rejestracje] B³¹d wiersza {'konferencja_id': '13', 'uczestnik_id': '13', 'data_rejestracji': '2025-01-15'}: ORA-02291: naruszono wiêzy spójnoœci (INF2NS_RUTKOWSKAK.SYS_C00260028) - nie znaleziono klucza nadrzêdnego
+Help: https://docs.oracle.com/error-help/db/ora-02291/
+2025-05-24 00:48:54,132 ERROR: [rejestracje] B³¹d wiersza {'konferencja_id': '14', 'uczestnik_id': '14', 'data_rejestracji': '2025-01-16'}: ORA-02291: naruszono wiêzy spójnoœci (INF2NS_RUTKOWSKAK.SYS_C00260028) - nie znaleziono klucza nadrzêdnego
+Help: https://docs.oracle.com/error-help/db/ora-02291/
+2025-05-24 00:48:54,338 ERROR: [rejestracje] B³¹d wiersza {'konferencja_id': '15', 'uczestnik_id': '15', 'data_rejestracji': '2025-01-17'}: ORA-02291: naruszono wiêzy spójnoœci (INF2NS_RUTKOWSKAK.SYS_C00260028) - nie znaleziono klucza nadrzêdnego
+Help: https://docs.oracle.com/error-help/db/ora-02291/
+2025-05-24 00:48:54,544 ERROR: [rejestracje] B³¹d wiersza {'konferencja_id': '16', 'uczestnik_id': '16', 'data_rejestracji': '2025-01-18'}: ORA-02291: naruszono wiêzy spójnoœci (INF2NS_RUTKOWSKAK.SYS_C00260028) - nie znaleziono klucza nadrzêdnego
+Help: https://docs.oracle.com/error-help/db/ora-02291/
+2025-05-24 00:48:54,748 ERROR: [rejestracje] B³¹d wiersza {'konferencja_id': '17', 'uczestnik_id': '17', 'data_rejestracji': '2025-01-19'}: ORA-02291: naruszono wiêzy spójnoœci (INF2NS_RUTKOWSKAK.SYS_C00260028) - nie znaleziono klucza nadrzêdnego
+Help: https://docs.oracle.com/error-help/db/ora-02291/
+2025-05-24 00:48:54,951 ERROR: [rejestracje] B³¹d wiersza {'konferencja_id': '18', 'uczestnik_id': '18', 'data_rejestracji': '2025-01-20'}: ORA-02291: naruszono wiêzy spójnoœci (INF2NS_RUTKOWSKAK.SYS_C00260028) - nie znaleziono klucza nadrzêdnego
+Help: https://docs.oracle.com/error-help/db/ora-02291/
+2025-05-24 00:48:55,158 ERROR: [rejestracje] B³¹d wiersza {'konferencja_id': '19', 'uczestnik_id': '19', 'data_rejestracji': '2025-01-21'}: ORA-02291: naruszono wiêzy spójnoœci (INF2NS_RUTKOWSKAK.SYS_C00260028) - nie znaleziono klucza nadrzêdnego
+Help: https://docs.oracle.com/error-help/db/ora-02291/
+2025-05-24 00:48:55,363 ERROR: [rejestracje] B³¹d wiersza {'konferencja_id': '20', 'uczestnik_id': '20', 'data_rejestracji': '2025-01-22'}: ORA-02291: naruszono wiêzy spójnoœci (INF2NS_RUTKOWSKAK.SYS_C00260028) - nie znaleziono klucza nadrzêdnego
+Help: https://docs.oracle.com/error-help/db/ora-02291/
+2025-05-24 00:48:55,568 ERROR: [rejestracje] B³¹d wiersza {'konferencja_id': '21', 'uczestnik_id': '21', 'data_rejestracji': '2025-01-23'}: ORA-02291: naruszono wiêzy spójnoœci (INF2NS_RUTKOWSKAK.SYS_C00260028) - nie znaleziono klucza nadrzêdnego
+Help: https://docs.oracle.com/error-help/db/ora-02291/
+2025-05-24 00:48:55,770 ERROR: [rejestracje] B³¹d wiersza {'konferencja_id': '22', 'uczestnik_id': '22', 'data_rejestracji': '2025-01-24'}: ORA-02291: naruszono wiêzy spójnoœci (INF2NS_RUTKOWSKAK.SYS_C00260028) - nie znaleziono klucza nadrzêdnego
+Help: https://docs.oracle.com/error-help/db/ora-02291/
+2025-05-24 00:48:55,979 ERROR: [rejestracje] B³¹d wiersza {'konferencja_id': '23', 'uczestnik_id': '23', 'data_rejestracji': '2025-01-25'}: ORA-02291: naruszono wiêzy spójnoœci (INF2NS_RUTKOWSKAK.SYS_C00260028) - nie znaleziono klucza nadrzêdnego
+Help: https://docs.oracle.com/error-help/db/ora-02291/
+2025-05-24 00:48:56,179 ERROR: [rejestracje] B³¹d wiersza {'konferencja_id': '24', 'uczestnik_id': '24', 'data_rejestracji': '2025-01-26'}: ORA-02291: naruszono wiêzy spójnoœci (INF2NS_RUTKOWSKAK.SYS_C00260028) - nie znaleziono klucza nadrzêdnego
+Help: https://docs.oracle.com/error-help/db/ora-02291/
+2025-05-24 00:48:56,386 ERROR: [rejestracje] B³¹d wiersza {'konferencja_id': '25', 'uczestnik_id': '25', 'data_rejestracji': '2025-01-27'}: ORA-02291: naruszono wiêzy spójnoœci (INF2NS_RUTKOWSKAK.SYS_C00260028) - nie znaleziono klucza nadrzêdnego
+Help: https://docs.oracle.com/error-help/db/ora-02291/
+2025-05-24 00:48:56,591 ERROR: [rejestracje] B³¹d wiersza {'konferencja_id': '26', 'uczestnik_id': '26', 'data_rejestracji': '2025-01-28'}: ORA-02291: naruszono wiêzy spójnoœci (INF2NS_RUTKOWSKAK.SYS_C00260028) - nie znaleziono klucza nadrzêdnego
+Help: https://docs.oracle.com/error-help/db/ora-02291/
+2025-05-24 00:48:56,797 ERROR: [rejestracje] B³¹d wiersza {'konferencja_id': '27', 'uczestnik_id': '27', 'data_rejestracji': '2025-01-29'}: ORA-02291: naruszono wiêzy spójnoœci (INF2NS_RUTKOWSKAK.SYS_C00260028) - nie znaleziono klucza nadrzêdnego
+Help: https://docs.oracle.com/error-help/db/ora-02291/
+2025-05-24 00:48:56,999 ERROR: [rejestracje] B³¹d wiersza {'konferencja_id': '28', 'uczestnik_id': '28', 'data_rejestracji': '2025-01-30'}: ORA-02291: naruszono wiêzy spójnoœci (INF2NS_RUTKOWSKAK.SYS_C00260028) - nie znaleziono klucza nadrzêdnego
+Help: https://docs.oracle.com/error-help/db/ora-02291/
+2025-05-24 00:48:57,206 ERROR: [rejestracje] B³¹d wiersza {'konferencja_id': '29', 'uczestnik_id': '29', 'data_rejestracji': '2025-01-31'}: ORA-02291: naruszono wiêzy spójnoœci (INF2NS_RUTKOWSKAK.SYS_C00260028) - nie znaleziono klucza nadrzêdnego
+Help: https://docs.oracle.com/error-help/db/ora-02291/
+2025-05-24 00:48:57,410 ERROR: [rejestracje] B³¹d wiersza {'konferencja_id': '30', 'uczestnik_id': '30', 'data_rejestracji': '2025-02-01'}: ORA-02291: naruszono wiêzy spójnoœci (INF2NS_RUTKOWSKAK.SYS_C00260028) - nie znaleziono klucza nadrzêdnego
+Help: https://docs.oracle.com/error-help/db/ora-02291/
+2025-05-24 00:48:57,514 INFO: OK: rejestracje.csv \u2192 D:\Studia\mgr\semestr 3\Zaawansowane Systemy Baz Danych\projekt\archive\rejestracje.csv.20250524004857
+2025-05-24 00:49:00,680 INFO: OK: sale.csv \u2192 D:\Studia\mgr\semestr 3\Zaawansowane Systemy Baz Danych\projekt\archive\sale.csv.20250524004900
+2025-05-24 00:49:00,890 ERROR: [sesje] B³¹d wiersza {'konferencja_id': '1', 'tytul': 'Session 1', 'opis': 'Description for session 1', 'data_sesji': '2025-01-02 09:00:00', 'sala_id': '1'}: ORA-02291: naruszono wiêzy spójnoœci (INF2NS_RUTKOWSKAK.SYS_C00260015) - nie znaleziono klucza nadrzêdnego
+Help: https://docs.oracle.com/error-help/db/ora-02291/
+2025-05-24 00:49:01,096 ERROR: [sesje] B³¹d wiersza {'konferencja_id': '2', 'tytul': 'Session 2', 'opis': 'Description for session 2', 'data_sesji': '2025-01-03 09:00:00', 'sala_id': '2'}: ORA-02291: naruszono wiêzy spójnoœci (INF2NS_RUTKOWSKAK.SYS_C00260015) - nie znaleziono klucza nadrzêdnego
+Help: https://docs.oracle.com/error-help/db/ora-02291/
+2025-05-24 00:49:01,300 ERROR: [sesje] B³¹d wiersza {'konferencja_id': '3', 'tytul': 'Session 3', 'opis': 'Description for session 3', 'data_sesji': '2025-01-04 09:00:00', 'sala_id': '3'}: ORA-02291: naruszono wiêzy spójnoœci (INF2NS_RUTKOWSKAK.SYS_C00260015) - nie znaleziono klucza nadrzêdnego
+Help: https://docs.oracle.com/error-help/db/ora-02291/
+2025-05-24 00:49:01,507 ERROR: [sesje] B³¹d wiersza {'konferencja_id': '4', 'tytul': 'Session 4', 'opis': 'Description for session 4', 'data_sesji': '2025-01-05 09:00:00', 'sala_id': '4'}: ORA-02291: naruszono wiêzy spójnoœci (INF2NS_RUTKOWSKAK.SYS_C00260015) - nie znaleziono klucza nadrzêdnego
+Help: https://docs.oracle.com/error-help/db/ora-02291/
+2025-05-24 00:49:01,704 ERROR: [sesje] B³¹d wiersza {'konferencja_id': '5', 'tytul': 'Session 5', 'opis': 'Description for session 5', 'data_sesji': '2025-01-06 09:00:00', 'sala_id': '5'}: ORA-02291: naruszono wiêzy spójnoœci (INF2NS_RUTKOWSKAK.SYS_C00260015) - nie znaleziono klucza nadrzêdnego
+Help: https://docs.oracle.com/error-help/db/ora-02291/
+2025-05-24 00:49:02,018 ERROR: [sesje] B³¹d wiersza {'konferencja_id': '7', 'tytul': 'Session 7', 'opis': 'Description for session 7', 'data_sesji': '2025-01-08 09:00:00', 'sala_id': '7'}: ORA-02291: naruszono wiêzy spójnoœci (INF2NS_RUTKOWSKAK.SYS_C00260015) - nie znaleziono klucza nadrzêdnego
+Help: https://docs.oracle.com/error-help/db/ora-02291/
+2025-05-24 00:49:02,218 ERROR: [sesje] B³¹d wiersza {'konferencja_id': '8', 'tytul': 'Session 8', 'opis': 'Description for session 8', 'data_sesji': '2025-01-09 09:00:00', 'sala_id': '8'}: ORA-02291: naruszono wiêzy spójnoœci (INF2NS_RUTKOWSKAK.SYS_C00260015) - nie znaleziono klucza nadrzêdnego
+Help: https://docs.oracle.com/error-help/db/ora-02291/
+2025-05-24 00:49:02,428 ERROR: [sesje] B³¹d wiersza {'konferencja_id': '9', 'tytul': 'Session 9', 'opis': 'Description for session 9', 'data_sesji': '2025-01-10 09:00:00', 'sala_id': '9'}: ORA-02291: naruszono wiêzy spójnoœci (INF2NS_RUTKOWSKAK.SYS_C00260015) - nie znaleziono klucza nadrzêdnego
+Help: https://docs.oracle.com/error-help/db/ora-02291/
+2025-05-24 00:49:02,634 ERROR: [sesje] B³¹d wiersza {'konferencja_id': '10', 'tytul': 'Session 10', 'opis': 'Description for session 10', 'data_sesji': '2025-01-11 09:00:00', 'sala_id': '10'}: ORA-02291: naruszono wiêzy spójnoœci (INF2NS_RUTKOWSKAK.SYS_C00260015) - nie znaleziono klucza nadrzêdnego
+Help: https://docs.oracle.com/error-help/db/ora-02291/
+2025-05-24 00:49:02,839 ERROR: [sesje] B³¹d wiersza {'konferencja_id': '11', 'tytul': 'Session 11', 'opis': 'Description for session 11', 'data_sesji': '2025-01-12 09:00:00', 'sala_id': '11'}: ORA-02291: naruszono wiêzy spójnoœci (INF2NS_RUTKOWSKAK.SYS_C00260015) - nie znaleziono klucza nadrzêdnego
+Help: https://docs.oracle.com/error-help/db/ora-02291/
+2025-05-24 00:49:03,042 ERROR: [sesje] B³¹d wiersza {'konferencja_id': '12', 'tytul': 'Session 12', 'opis': 'Description for session 12', 'data_sesji': '2025-01-13 09:00:00', 'sala_id': '12'}: ORA-02291: naruszono wiêzy spójnoœci (INF2NS_RUTKOWSKAK.SYS_C00260015) - nie znaleziono klucza nadrzêdnego
+Help: https://docs.oracle.com/error-help/db/ora-02291/
+2025-05-24 00:49:03,247 ERROR: [sesje] B³¹d wiersza {'konferencja_id': '13', 'tytul': 'Session 13', 'opis': 'Description for session 13', 'data_sesji': '2025-01-14 09:00:00', 'sala_id': '13'}: ORA-02291: naruszono wiêzy spójnoœci (INF2NS_RUTKOWSKAK.SYS_C00260015) - nie znaleziono klucza nadrzêdnego
+Help: https://docs.oracle.com/error-help/db/ora-02291/
+2025-05-24 00:49:03,445 ERROR: [sesje] B³¹d wiersza {'konferencja_id': '14', 'tytul': 'Session 14', 'opis': 'Description for session 14', 'data_sesji': '2025-01-15 09:00:00', 'sala_id': '14'}: ORA-02291: naruszono wiêzy spójnoœci (INF2NS_RUTKOWSKAK.SYS_C00260015) - nie znaleziono klucza nadrzêdnego
+Help: https://docs.oracle.com/error-help/db/ora-02291/
+2025-05-24 00:49:03,659 ERROR: [sesje] B³¹d wiersza {'konferencja_id': '15', 'tytul': 'Session 15', 'opis': 'Description for session 15', 'data_sesji': '2025-01-16 09:00:00', 'sala_id': '15'}: ORA-02291: naruszono wiêzy spójnoœci (INF2NS_RUTKOWSKAK.SYS_C00260015) - nie znaleziono klucza nadrzêdnego
+Help: https://docs.oracle.com/error-help/db/ora-02291/
+2025-05-24 00:49:03,860 ERROR: [sesje] B³¹d wiersza {'konferencja_id': '16', 'tytul': 'Session 16', 'opis': 'Description for session 16', 'data_sesji': '2025-01-17 09:00:00', 'sala_id': '16'}: ORA-02291: naruszono wiêzy spójnoœci (INF2NS_RUTKOWSKAK.SYS_C00260015) - nie znaleziono klucza nadrzêdnego
+Help: https://docs.oracle.com/error-help/db/ora-02291/
+2025-05-24 00:49:04,066 ERROR: [sesje] B³¹d wiersza {'konferencja_id': '17', 'tytul': 'Session 17', 'opis': 'Description for session 17', 'data_sesji': '2025-01-18 09:00:00', 'sala_id': '17'}: ORA-02291: naruszono wiêzy spójnoœci (INF2NS_RUTKOWSKAK.SYS_C00260015) - nie znaleziono klucza nadrzêdnego
+Help: https://docs.oracle.com/error-help/db/ora-02291/
+2025-05-24 00:49:04,279 ERROR: [sesje] B³¹d wiersza {'konferencja_id': '18', 'tytul': 'Session 18', 'opis': 'Description for session 18', 'data_sesji': '2025-01-19 09:00:00', 'sala_id': '18'}: ORA-02291: naruszono wiêzy spójnoœci (INF2NS_RUTKOWSKAK.SYS_C00260015) - nie znaleziono klucza nadrzêdnego
+Help: https://docs.oracle.com/error-help/db/ora-02291/
+2025-05-24 00:49:05,815 INFO: OK: sesje.csv \u2192 D:\Studia\mgr\semestr 3\Zaawansowane Systemy Baz Danych\projekt\archive\sesje.csv.20250524004905
+2025-05-24 00:49:06,013 ERROR: [sesje_prelegenci] B³¹d wiersza {'sesja_id': '1', 'prelegent_id': '1'}: ORA-02291: naruszono wiêzy spójnoœci (INF2NS_RUTKOWSKAK.SYS_C00260033) - nie znaleziono klucza nadrzêdnego
+Help: https://docs.oracle.com/error-help/db/ora-02291/
+2025-05-24 00:49:06,216 ERROR: [sesje_prelegenci] B³¹d wiersza {'sesja_id': '2', 'prelegent_id': '2'}: ORA-02291: naruszono wiêzy spójnoœci (INF2NS_RUTKOWSKAK.SYS_C00260033) - nie znaleziono klucza nadrzêdnego
+Help: https://docs.oracle.com/error-help/db/ora-02291/
+2025-05-24 00:49:06,421 ERROR: [sesje_prelegenci] B³¹d wiersza {'sesja_id': '3', 'prelegent_id': '3'}: ORA-02291: naruszono wiêzy spójnoœci (INF2NS_RUTKOWSKAK.SYS_C00260034) - nie znaleziono klucza nadrzêdnego
+Help: https://docs.oracle.com/error-help/db/ora-02291/
+2025-05-24 00:49:06,783 ERROR: [sesje_prelegenci] B³¹d wiersza {'sesja_id': '4', 'prelegent_id': '4'}: ORA-02291: naruszono wiêzy spójnoœci (INF2NS_RUTKOWSKAK.SYS_C00260034) - nie znaleziono klucza nadrzêdnego
+Help: https://docs.oracle.com/error-help/db/ora-02291/
+2025-05-24 00:49:07,042 ERROR: [sesje_prelegenci] B³¹d wiersza {'sesja_id': '5', 'prelegent_id': '5'}: ORA-02291: naruszono wiêzy spójnoœci (INF2NS_RUTKOWSKAK.SYS_C00260034) - nie znaleziono klucza nadrzêdnego
+Help: https://docs.oracle.com/error-help/db/ora-02291/
+2025-05-24 00:49:07,257 ERROR: [sesje_prelegenci] B³¹d wiersza {'sesja_id': '6', 'prelegent_id': '6'}: ORA-02291: naruszono wiêzy spójnoœci (INF2NS_RUTKOWSKAK.SYS_C00260034) - nie znaleziono klucza nadrzêdnego
+Help: https://docs.oracle.com/error-help/db/ora-02291/
+2025-05-24 00:49:07,549 ERROR: [sesje_prelegenci] B³¹d wiersza {'sesja_id': '7', 'prelegent_id': '7'}: ORA-02291: naruszono wiêzy spójnoœci (INF2NS_RUTKOWSKAK.SYS_C00260034) - nie znaleziono klucza nadrzêdnego
+Help: https://docs.oracle.com/error-help/db/ora-02291/
+2025-05-24 00:49:07,753 ERROR: [sesje_prelegenci] B³¹d wiersza {'sesja_id': '8', 'prelegent_id': '8'}: ORA-02291: naruszono wiêzy spójnoœci (INF2NS_RUTKOWSKAK.SYS_C00260034) - nie znaleziono klucza nadrzêdnego
+Help: https://docs.oracle.com/error-help/db/ora-02291/
+2025-05-24 00:49:07,957 ERROR: [sesje_prelegenci] B³¹d wiersza {'sesja_id': '9', 'prelegent_id': '9'}: ORA-02291: naruszono wiêzy spójnoœci (INF2NS_RUTKOWSKAK.SYS_C00260034) - nie znaleziono klucza nadrzêdnego
+Help: https://docs.oracle.com/error-help/db/ora-02291/
+2025-05-24 00:49:08,163 ERROR: [sesje_prelegenci] B³¹d wiersza {'sesja_id': '10', 'prelegent_id': '10'}: ORA-02291: naruszono wiêzy spójnoœci (INF2NS_RUTKOWSKAK.SYS_C00260034) - nie znaleziono klucza nadrzêdnego
+Help: https://docs.oracle.com/error-help/db/ora-02291/
+2025-05-24 00:49:08,366 ERROR: [sesje_prelegenci] B³¹d wiersza {'sesja_id': '11', 'prelegent_id': '11'}: ORA-02291: naruszono wiêzy spójnoœci (INF2NS_RUTKOWSKAK.SYS_C00260034) - nie znaleziono klucza nadrzêdnego
+Help: https://docs.oracle.com/error-help/db/ora-02291/
+2025-05-24 00:49:08,573 ERROR: [sesje_prelegenci] B³¹d wiersza {'sesja_id': '12', 'prelegent_id': '12'}: ORA-02291: naruszono wiêzy spójnoœci (INF2NS_RUTKOWSKAK.SYS_C00260034) - nie znaleziono klucza nadrzêdnego
+Help: https://docs.oracle.com/error-help/db/ora-02291/
+2025-05-24 00:49:08,776 ERROR: [sesje_prelegenci] B³¹d wiersza {'sesja_id': '13', 'prelegent_id': '13'}: ORA-02291: naruszono wiêzy spójnoœci (INF2NS_RUTKOWSKAK.SYS_C00260034) - nie znaleziono klucza nadrzêdnego
+Help: https://docs.oracle.com/error-help/db/ora-02291/
+2025-05-24 00:49:08,982 ERROR: [sesje_prelegenci] B³¹d wiersza {'sesja_id': '14', 'prelegent_id': '14'}: ORA-02291: naruszono wiêzy spójnoœci (INF2NS_RUTKOWSKAK.SYS_C00260034) - nie znaleziono klucza nadrzêdnego
+Help: https://docs.oracle.com/error-help/db/ora-02291/
+2025-05-24 00:49:09,186 ERROR: [sesje_prelegenci] B³¹d wiersza {'sesja_id': '15', 'prelegent_id': '15'}: ORA-02291: naruszono wiêzy spójnoœci (INF2NS_RUTKOWSKAK.SYS_C00260034) - nie znaleziono klucza nadrzêdnego
+Help: https://docs.oracle.com/error-help/db/ora-02291/
+2025-05-24 00:49:09,392 ERROR: [sesje_prelegenci] B³¹d wiersza {'sesja_id': '16', 'prelegent_id': '16'}: ORA-02291: naruszono wiêzy spójnoœci (INF2NS_RUTKOWSKAK.SYS_C00260034) - nie znaleziono klucza nadrzêdnego
+Help: https://docs.oracle.com/error-help/db/ora-02291/
+2025-05-24 00:49:09,596 ERROR: [sesje_prelegenci] B³¹d wiersza {'sesja_id': '17', 'prelegent_id': '17'}: ORA-02291: naruszono wiêzy spójnoœci (INF2NS_RUTKOWSKAK.SYS_C00260034) - nie znaleziono klucza nadrzêdnego
+Help: https://docs.oracle.com/error-help/db/ora-02291/
+2025-05-24 00:49:09,801 ERROR: [sesje_prelegenci] B³¹d wiersza {'sesja_id': '18', 'prelegent_id': '18'}: ORA-02291: naruszono wiêzy spójnoœci (INF2NS_RUTKOWSKAK.SYS_C00260034) - nie znaleziono klucza nadrzêdnego
+Help: https://docs.oracle.com/error-help/db/ora-02291/
+2025-05-24 00:49:10,005 ERROR: [sesje_prelegenci] B³¹d wiersza {'sesja_id': '19', 'prelegent_id': '19'}: ORA-02291: naruszono wiêzy spójnoœci (INF2NS_RUTKOWSKAK.SYS_C00260034) - nie znaleziono klucza nadrzêdnego
+Help: https://docs.oracle.com/error-help/db/ora-02291/
+2025-05-24 00:49:10,211 ERROR: [sesje_prelegenci] B³¹d wiersza {'sesja_id': '20', 'prelegent_id': '20'}: ORA-02291: naruszono wiêzy spójnoœci (INF2NS_RUTKOWSKAK.SYS_C00260034) - nie znaleziono klucza nadrzêdnego
+Help: https://docs.oracle.com/error-help/db/ora-02291/
+2025-05-24 00:49:10,414 ERROR: [sesje_prelegenci] B³¹d wiersza {'sesja_id': '21', 'prelegent_id': '21'}: ORA-02291: naruszono wiêzy spójnoœci (INF2NS_RUTKOWSKAK.SYS_C00260033) - nie znaleziono klucza nadrzêdnego
+Help: https://docs.oracle.com/error-help/db/ora-02291/
+2025-05-24 00:49:10,621 ERROR: [sesje_prelegenci] B³¹d wiersza {'sesja_id': '22', 'prelegent_id': '22'}: ORA-02291: naruszono wiêzy spójnoœci (INF2NS_RUTKOWSKAK.SYS_C00260033) - nie znaleziono klucza nadrzêdnego
+Help: https://docs.oracle.com/error-help/db/ora-02291/
+2025-05-24 00:49:10,826 ERROR: [sesje_prelegenci] B³¹d wiersza {'sesja_id': '23', 'prelegent_id': '23'}: ORA-02291: naruszono wiêzy spójnoœci (INF2NS_RUTKOWSKAK.SYS_C00260033) - nie znaleziono klucza nadrzêdnego
+Help: https://docs.oracle.com/error-help/db/ora-02291/
+2025-05-24 00:49:11,645 INFO: OK: sesje_prelegenci.csv \u2192 D:\Studia\mgr\semestr 3\Zaawansowane Systemy Baz Danych\projekt\archive\sesje_prelegenci.csv.20250524004911
+2025-05-24 00:49:11,645 WARNING: Unknown file skipped: test_participants.csv
+2025-05-24 00:49:14,820 INFO: OK: uczestnicy.csv \u2192 D:\Studia\mgr\semestr 3\Zaawansowane Systemy Baz Danych\projekt\archive\uczestnicy.csv.20250524004914
+2025-05-24 01:33:51,618 INFO: Brak pliku, pomijam: konferencje.csv
+2025-05-24 01:33:51,618 INFO: Brak pliku, pomijam: sale.csv
+2025-05-24 01:33:51,618 INFO: Brak pliku, pomijam: sesje.csv
+2025-05-24 01:33:53,482 INFO: OK: prelegenci.csv -> D:\Studia\mgr\semestr 3\Zaawansowane Systemy Baz Danych\projekt\archive\prelegenci.csv.20250524013353
+2025-05-24 01:35:29,716 INFO: OK: uczestnicy.csv -> D:\Studia\mgr\semestr 3\Zaawansowane Systemy Baz Danych\projekt\archive\uczestnicy.csv.20250524013529
+2025-05-24 01:35:29,956 ERROR: [rejestracje] Skipped, parent missing: konf=1,ucz=1
+2025-05-24 01:35:29,956 ERROR: [rejestracje] Skipped, parent missing: konf=2,ucz=2
+2025-05-24 01:35:29,957 ERROR: [rejestracje] Skipped, parent missing: konf=3,ucz=3
+2025-05-24 01:35:29,957 ERROR: [rejestracje] Skipped, parent missing: konf=4,ucz=4
+2025-05-24 01:35:29,957 ERROR: [rejestracje] Skipped, parent missing: konf=5,ucz=5
+2025-05-24 01:35:29,957 ERROR: [rejestracje] Skipped, parent missing: konf=6,ucz=6
+2025-05-24 01:35:29,957 ERROR: [rejestracje] Skipped, parent missing: konf=7,ucz=7
+2025-05-24 01:35:29,957 ERROR: [rejestracje] Skipped, parent missing: konf=8,ucz=8
+2025-05-24 01:35:29,957 ERROR: [rejestracje] Skipped, parent missing: konf=9,ucz=9
+2025-05-24 01:35:29,957 ERROR: [rejestracje] Skipped, parent missing: konf=10,ucz=10
+2025-05-24 01:35:29,958 ERROR: [rejestracje] Skipped, parent missing: konf=11,ucz=11
+2025-05-24 01:35:29,958 ERROR: [rejestracje] Skipped, parent missing: konf=12,ucz=12
+2025-05-24 01:35:29,958 ERROR: [rejestracje] Skipped, parent missing: konf=13,ucz=13
+2025-05-24 01:35:29,958 ERROR: [rejestracje] Skipped, parent missing: konf=14,ucz=14
+2025-05-24 01:35:29,958 ERROR: [rejestracje] Skipped, parent missing: konf=15,ucz=15
+2025-05-24 01:35:29,958 ERROR: [rejestracje] Skipped, parent missing: konf=16,ucz=16
+2025-05-24 01:35:29,958 ERROR: [rejestracje] Skipped, parent missing: konf=17,ucz=17
+2025-05-24 01:35:29,958 ERROR: [rejestracje] Skipped, parent missing: konf=18,ucz=18
+2025-05-24 01:35:29,958 ERROR: [rejestracje] Skipped, parent missing: konf=19,ucz=19
+2025-05-24 01:35:29,958 ERROR: [rejestracje] Skipped, parent missing: konf=20,ucz=20
+2025-05-24 01:35:29,958 ERROR: [rejestracje] Skipped, parent missing: konf=21,ucz=21
+2025-05-24 01:35:29,958 ERROR: [rejestracje] Skipped, parent missing: konf=22,ucz=22
+2025-05-24 01:35:29,958 ERROR: [rejestracje] Skipped, parent missing: konf=23,ucz=23
+2025-05-24 01:35:29,958 ERROR: [rejestracje] Skipped, parent missing: konf=24,ucz=24
+2025-05-24 01:35:29,958 ERROR: [rejestracje] Skipped, parent missing: konf=25,ucz=25
+2025-05-24 01:35:29,958 ERROR: [rejestracje] Skipped, parent missing: konf=26,ucz=26
+2025-05-24 01:35:29,958 ERROR: [rejestracje] Skipped, parent missing: konf=27,ucz=27
+2025-05-24 01:35:29,958 ERROR: [rejestracje] Skipped, parent missing: konf=28,ucz=28
+2025-05-24 01:35:29,958 ERROR: [rejestracje] Skipped, parent missing: konf=29,ucz=29
+2025-05-24 01:35:29,958 ERROR: [rejestracje] Skipped, parent missing: konf=30,ucz=30
+2025-05-24 01:35:30,018 INFO: OK: rejestracje.csv -> D:\Studia\mgr\semestr 3\Zaawansowane Systemy Baz Danych\projekt\archive\rejestracje.csv.20250524013530
+2025-05-24 01:35:30,145 ERROR: [sesje_prelegenci] ORA-02291: naruszono wiêzy spójnoœci (INF2NS_RUTKOWSKAK.SYS_C00260034) - nie znaleziono klucza nadrzêdnego
+Help: https://docs.oracle.com/error-help/db/ora-02291/ — wiersz: {'sesja_id': '1', 'prelegent_id': '1'}
+2025-05-24 01:35:30,269 ERROR: [sesje_prelegenci] ORA-02291: naruszono wiêzy spójnoœci (INF2NS_RUTKOWSKAK.SYS_C00260034) - nie znaleziono klucza nadrzêdnego
+Help: https://docs.oracle.com/error-help/db/ora-02291/ — wiersz: {'sesja_id': '2', 'prelegent_id': '2'}
+2025-05-24 01:35:30,399 ERROR: [sesje_prelegenci] ORA-02291: naruszono wiêzy spójnoœci (INF2NS_RUTKOWSKAK.SYS_C00260034) - nie znaleziono klucza nadrzêdnego
+Help: https://docs.oracle.com/error-help/db/ora-02291/ — wiersz: {'sesja_id': '3', 'prelegent_id': '3'}
+2025-05-24 01:35:30,529 ERROR: [sesje_prelegenci] ORA-02291: naruszono wiêzy spójnoœci (INF2NS_RUTKOWSKAK.SYS_C00260034) - nie znaleziono klucza nadrzêdnego
+Help: https://docs.oracle.com/error-help/db/ora-02291/ — wiersz: {'sesja_id': '4', 'prelegent_id': '4'}
+2025-05-24 01:35:30,649 ERROR: [sesje_prelegenci] ORA-02291: naruszono wiêzy spójnoœci (INF2NS_RUTKOWSKAK.SYS_C00260034) - nie znaleziono klucza nadrzêdnego
+Help: https://docs.oracle.com/error-help/db/ora-02291/ — wiersz: {'sesja_id': '5', 'prelegent_id': '5'}
+2025-05-24 01:35:30,756 ERROR: [sesje_prelegenci] ORA-02291: naruszono wiêzy spójnoœci (INF2NS_RUTKOWSKAK.SYS_C00260034) - nie znaleziono klucza nadrzêdnego
+Help: https://docs.oracle.com/error-help/db/ora-02291/ — wiersz: {'sesja_id': '6', 'prelegent_id': '6'}
+2025-05-24 01:35:30,875 ERROR: [sesje_prelegenci] ORA-02291: naruszono wiêzy spójnoœci (INF2NS_RUTKOWSKAK.SYS_C00260034) - nie znaleziono klucza nadrzêdnego
+Help: https://docs.oracle.com/error-help/db/ora-02291/ — wiersz: {'sesja_id': '7', 'prelegent_id': '7'}
+2025-05-24 01:35:30,990 ERROR: [sesje_prelegenci] ORA-02291: naruszono wiêzy spójnoœci (INF2NS_RUTKOWSKAK.SYS_C00260034) - nie znaleziono klucza nadrzêdnego
+Help: https://docs.oracle.com/error-help/db/ora-02291/ — wiersz: {'sesja_id': '8', 'prelegent_id': '8'}
+2025-05-24 01:35:31,095 ERROR: [sesje_prelegenci] ORA-02291: naruszono wiêzy spójnoœci (INF2NS_RUTKOWSKAK.SYS_C00260034) - nie znaleziono klucza nadrzêdnego
+Help: https://docs.oracle.com/error-help/db/ora-02291/ — wiersz: {'sesja_id': '9', 'prelegent_id': '9'}
+2025-05-24 01:35:31,222 ERROR: [sesje_prelegenci] ORA-02291: naruszono wiêzy spójnoœci (INF2NS_RUTKOWSKAK.SYS_C00260034) - nie znaleziono klucza nadrzêdnego
+Help: https://docs.oracle.com/error-help/db/ora-02291/ — wiersz: {'sesja_id': '10', 'prelegent_id': '10'}
+2025-05-24 01:35:31,336 ERROR: [sesje_prelegenci] ORA-02291: naruszono wiêzy spójnoœci (INF2NS_RUTKOWSKAK.SYS_C00260034) - nie znaleziono klucza nadrzêdnego
+Help: https://docs.oracle.com/error-help/db/ora-02291/ — wiersz: {'sesja_id': '11', 'prelegent_id': '11'}
+2025-05-24 01:35:31,533 ERROR: [sesje_prelegenci] ORA-02291: naruszono wiêzy spójnoœci (INF2NS_RUTKOWSKAK.SYS_C00260034) - nie znaleziono klucza nadrzêdnego
+Help: https://docs.oracle.com/error-help/db/ora-02291/ — wiersz: {'sesja_id': '12', 'prelegent_id': '12'}
+2025-05-24 01:35:31,651 ERROR: [sesje_prelegenci] ORA-02291: naruszono wiêzy spójnoœci (INF2NS_RUTKOWSKAK.SYS_C00260034) - nie znaleziono klucza nadrzêdnego
+Help: https://docs.oracle.com/error-help/db/ora-02291/ — wiersz: {'sesja_id': '13', 'prelegent_id': '13'}
+2025-05-24 01:35:31,778 ERROR: [sesje_prelegenci] ORA-02291: naruszono wiêzy spójnoœci (INF2NS_RUTKOWSKAK.SYS_C00260034) - nie znaleziono klucza nadrzêdnego
+Help: https://docs.oracle.com/error-help/db/ora-02291/ — wiersz: {'sesja_id': '14', 'prelegent_id': '14'}
+2025-05-24 01:35:31,924 ERROR: [sesje_prelegenci] ORA-02291: naruszono wiêzy spójnoœci (INF2NS_RUTKOWSKAK.SYS_C00260034) - nie znaleziono klucza nadrzêdnego
+Help: https://docs.oracle.com/error-help/db/ora-02291/ — wiersz: {'sesja_id': '15', 'prelegent_id': '15'}
+2025-05-24 01:35:32,045 ERROR: [sesje_prelegenci] ORA-02291: naruszono wiêzy spójnoœci (INF2NS_RUTKOWSKAK.SYS_C00260034) - nie znaleziono klucza nadrzêdnego
+Help: https://docs.oracle.com/error-help/db/ora-02291/ — wiersz: {'sesja_id': '16', 'prelegent_id': '16'}
+2025-05-24 01:35:32,187 ERROR: [sesje_prelegenci] ORA-02291: naruszono wiêzy spójnoœci (INF2NS_RUTKOWSKAK.SYS_C00260034) - nie znaleziono klucza nadrzêdnego
+Help: https://docs.oracle.com/error-help/db/ora-02291/ — wiersz: {'sesja_id': '17', 'prelegent_id': '17'}
+2025-05-24 01:35:32,307 ERROR: [sesje_prelegenci] ORA-02291: naruszono wiêzy spójnoœci (INF2NS_RUTKOWSKAK.SYS_C00260034) - nie znaleziono klucza nadrzêdnego
+Help: https://docs.oracle.com/error-help/db/ora-02291/ — wiersz: {'sesja_id': '18', 'prelegent_id': '18'}
+2025-05-24 01:35:32,424 ERROR: [sesje_prelegenci] ORA-02291: naruszono wiêzy spójnoœci (INF2NS_RUTKOWSKAK.SYS_C00260034) - nie znaleziono klucza nadrzêdnego
+Help: https://docs.oracle.com/error-help/db/ora-02291/ — wiersz: {'sesja_id': '19', 'prelegent_id': '19'}
+2025-05-24 01:35:32,548 ERROR: [sesje_prelegenci] ORA-02291: naruszono wiêzy spójnoœci (INF2NS_RUTKOWSKAK.SYS_C00260034) - nie znaleziono klucza nadrzêdnego
+Help: https://docs.oracle.com/error-help/db/ora-02291/ — wiersz: {'sesja_id': '20', 'prelegent_id': '20'}
+2025-05-24 01:35:32,652 ERROR: [sesje_prelegenci] ORA-02291: naruszono wiêzy spójnoœci (INF2NS_RUTKOWSKAK.SYS_C00260034) - nie znaleziono klucza nadrzêdnego
+Help: https://docs.oracle.com/error-help/db/ora-02291/ — wiersz: {'sesja_id': '21', 'prelegent_id': '21'}
+2025-05-24 01:35:32,784 ERROR: [sesje_prelegenci] ORA-02291: naruszono wiêzy spójnoœci (INF2NS_RUTKOWSKAK.SYS_C00260034) - nie znaleziono klucza nadrzêdnego
+Help: https://docs.oracle.com/error-help/db/ora-02291/ — wiersz: {'sesja_id': '22', 'prelegent_id': '22'}
+2025-05-24 01:35:32,906 ERROR: [sesje_prelegenci] ORA-02291: naruszono wiêzy spójnoœci (INF2NS_RUTKOWSKAK.SYS_C00260034) - nie znaleziono klucza nadrzêdnego
+Help: https://docs.oracle.com/error-help/db/ora-02291/ — wiersz: {'sesja_id': '23', 'prelegent_id': '23'}
+2025-05-24 01:35:33,016 ERROR: [sesje_prelegenci] ORA-02291: naruszono wiêzy spójnoœci (INF2NS_RUTKOWSKAK.SYS_C00260034) - nie znaleziono klucza nadrzêdnego
+Help: https://docs.oracle.com/error-help/db/ora-02291/ — wiersz: {'sesja_id': '24', 'prelegent_id': '24'}
+2025-05-24 01:35:33,146 ERROR: [sesje_prelegenci] ORA-02291: naruszono wiêzy spójnoœci (INF2NS_RUTKOWSKAK.SYS_C00260034) - nie znaleziono klucza nadrzêdnego
+Help: https://docs.oracle.com/error-help/db/ora-02291/ — wiersz: {'sesja_id': '25', 'prelegent_id': '25'}
+2025-05-24 01:35:33,267 ERROR: [sesje_prelegenci] ORA-02291: naruszono wiêzy spójnoœci (INF2NS_RUTKOWSKAK.SYS_C00260034) - nie znaleziono klucza nadrzêdnego
+Help: https://docs.oracle.com/error-help/db/ora-02291/ — wiersz: {'sesja_id': '26', 'prelegent_id': '26'}
+2025-05-24 01:35:33,383 ERROR: [sesje_prelegenci] ORA-02291: naruszono wiêzy spójnoœci (INF2NS_RUTKOWSKAK.SYS_C00260034) - nie znaleziono klucza nadrzêdnego
+Help: https://docs.oracle.com/error-help/db/ora-02291/ — wiersz: {'sesja_id': '27', 'prelegent_id': '27'}
+2025-05-24 01:35:33,497 ERROR: [sesje_prelegenci] ORA-02291: naruszono wiêzy spójnoœci (INF2NS_RUTKOWSKAK.SYS_C00260034) - nie znaleziono klucza nadrzêdnego
+Help: https://docs.oracle.com/error-help/db/ora-02291/ — wiersz: {'sesja_id': '28', 'prelegent_id': '28'}
+2025-05-24 01:35:33,622 ERROR: [sesje_prelegenci] ORA-02291: naruszono wiêzy spójnoœci (INF2NS_RUTKOWSKAK.SYS_C00260034) - nie znaleziono klucza nadrzêdnego
+Help: https://docs.oracle.com/error-help/db/ora-02291/ — wiersz: {'sesja_id': '29', 'prelegent_id': '29'}
+2025-05-24 01:35:33,750 ERROR: [sesje_prelegenci] ORA-02291: naruszono wiêzy spójnoœci (INF2NS_RUTKOWSKAK.SYS_C00260034) - nie znaleziono klucza nadrzêdnego
+Help: https://docs.oracle.com/error-help/db/ora-02291/ — wiersz: {'sesja_id': '30', 'prelegent_id': '30'}
+2025-05-24 01:35:33,816 INFO: OK: sesje_prelegenci.csv -> D:\Studia\mgr\semestr 3\Zaawansowane Systemy Baz Danych\projekt\archive\sesje_prelegenci.csv.20250524013533
+2025-05-24 01:52:43,040 INFO: Brak pliku: konferencje.csv
+2025-05-24 01:52:43,040 INFO: Brak pliku: sale.csv
+2025-05-24 01:52:43,040 INFO: Brak pliku: sesje.csv
+2025-05-24 01:52:43,040 INFO: Brak pliku: prelegenci.csv
+2025-05-24 01:52:43,040 INFO: Brak pliku: uczestnicy.csv
+2025-05-24 01:52:43,281 ERROR: [rejestracje] Pominiêto (brak PK): konf=1,ucz=1
+2025-05-24 01:52:43,281 ERROR: [rejestracje] Pominiêto (brak PK): konf=2,ucz=2
+2025-05-24 01:52:43,281 ERROR: [rejestracje] Pominiêto (brak PK): konf=3,ucz=3
+2025-05-24 01:52:43,283 ERROR: [rejestracje] Pominiêto (brak PK): konf=4,ucz=4
+2025-05-24 01:52:43,283 ERROR: [rejestracje] Pominiêto (brak PK): konf=5,ucz=5
+2025-05-24 01:52:43,283 ERROR: [rejestracje] Pominiêto (brak PK): konf=6,ucz=6
+2025-05-24 01:52:43,283 ERROR: [rejestracje] Pominiêto (brak PK): konf=7,ucz=7
+2025-05-24 01:52:43,283 ERROR: [rejestracje] Pominiêto (brak PK): konf=8,ucz=8
+2025-05-24 01:52:43,283 ERROR: [rejestracje] Pominiêto (brak PK): konf=9,ucz=9
+2025-05-24 01:52:43,283 ERROR: [rejestracje] Pominiêto (brak PK): konf=10,ucz=10
+2025-05-24 01:52:43,283 ERROR: [rejestracje] Pominiêto (brak PK): konf=11,ucz=11
+2025-05-24 01:52:43,283 ERROR: [rejestracje] Pominiêto (brak PK): konf=12,ucz=12
+2025-05-24 01:52:43,283 ERROR: [rejestracje] Pominiêto (brak PK): konf=13,ucz=13
+2025-05-24 01:52:43,283 ERROR: [rejestracje] Pominiêto (brak PK): konf=14,ucz=14
+2025-05-24 01:52:43,283 ERROR: [rejestracje] Pominiêto (brak PK): konf=15,ucz=15
+2025-05-24 01:52:43,283 ERROR: [rejestracje] Pominiêto (brak PK): konf=16,ucz=16
+2025-05-24 01:52:43,283 ERROR: [rejestracje] Pominiêto (brak PK): konf=17,ucz=17
+2025-05-24 01:52:43,283 ERROR: [rejestracje] Pominiêto (brak PK): konf=18,ucz=18
+2025-05-24 01:52:43,283 ERROR: [rejestracje] Pominiêto (brak PK): konf=19,ucz=19
+2025-05-24 01:52:43,283 ERROR: [rejestracje] Pominiêto (brak PK): konf=20,ucz=20
+2025-05-24 01:52:43,283 ERROR: [rejestracje] Pominiêto (brak PK): konf=21,ucz=21
+2025-05-24 01:52:43,283 ERROR: [rejestracje] Pominiêto (brak PK): konf=22,ucz=22
+2025-05-24 01:52:43,283 ERROR: [rejestracje] Pominiêto (brak PK): konf=23,ucz=23
+2025-05-24 01:52:43,283 ERROR: [rejestracje] Pominiêto (brak PK): konf=24,ucz=24
+2025-05-24 01:52:43,283 ERROR: [rejestracje] Pominiêto (brak PK): konf=25,ucz=25
+2025-05-24 01:52:43,283 ERROR: [rejestracje] Pominiêto (brak PK): konf=26,ucz=26
+2025-05-24 01:52:43,283 ERROR: [rejestracje] Pominiêto (brak PK): konf=27,ucz=27
+2025-05-24 01:52:43,283 ERROR: [rejestracje] Pominiêto (brak PK): konf=28,ucz=28
+2025-05-24 01:52:43,283 ERROR: [rejestracje] Pominiêto (brak PK): konf=29,ucz=29
+2025-05-24 01:52:43,283 ERROR: [rejestracje] Pominiêto (brak PK): konf=30,ucz=30
+2025-05-24 01:52:43,342 INFO: ZA£ADOWANO: rejestracje.csv \u2192 D:\Studia\mgr\semestr 3\Zaawansowane Systemy Baz Danych\projekt\archive\rejestracje.csv.20250524015243
+2025-05-24 01:52:43,471 ERROR: [sesje_prelegenci] ORA-02291: naruszono wiêzy spójnoœci (INF2NS_RUTKOWSKAK.SYS_C00260034) - nie znaleziono klucza nadrzêdnego
+Help: https://docs.oracle.com/error-help/db/ora-02291/ — wiersz: {'sesja_id': '1', 'prelegent_id': '1'}
+2025-05-24 01:52:43,581 ERROR: [sesje_prelegenci] ORA-02291: naruszono wiêzy spójnoœci (INF2NS_RUTKOWSKAK.SYS_C00260034) - nie znaleziono klucza nadrzêdnego
+Help: https://docs.oracle.com/error-help/db/ora-02291/ — wiersz: {'sesja_id': '2', 'prelegent_id': '2'}
+2025-05-24 01:52:43,685 ERROR: [sesje_prelegenci] ORA-02291: naruszono wiêzy spójnoœci (INF2NS_RUTKOWSKAK.SYS_C00260034) - nie znaleziono klucza nadrzêdnego
+Help: https://docs.oracle.com/error-help/db/ora-02291/ — wiersz: {'sesja_id': '3', 'prelegent_id': '3'}
+2025-05-24 01:52:43,793 ERROR: [sesje_prelegenci] ORA-02291: naruszono wiêzy spójnoœci (INF2NS_RUTKOWSKAK.SYS_C00260034) - nie znaleziono klucza nadrzêdnego
+Help: https://docs.oracle.com/error-help/db/ora-02291/ — wiersz: {'sesja_id': '4', 'prelegent_id': '4'}
+2025-05-24 01:52:43,916 ERROR: [sesje_prelegenci] ORA-02291: naruszono wiêzy spójnoœci (INF2NS_RUTKOWSKAK.SYS_C00260034) - nie znaleziono klucza nadrzêdnego
+Help: https://docs.oracle.com/error-help/db/ora-02291/ — wiersz: {'sesja_id': '5', 'prelegent_id': '5'}
+2025-05-24 01:52:44,044 ERROR: [sesje_prelegenci] ORA-02291: naruszono wiêzy spójnoœci (INF2NS_RUTKOWSKAK.SYS_C00260034) - nie znaleziono klucza nadrzêdnego
+Help: https://docs.oracle.com/error-help/db/ora-02291/ — wiersz: {'sesja_id': '6', 'prelegent_id': '6'}
+2025-05-24 01:52:44,172 ERROR: [sesje_prelegenci] ORA-02291: naruszono wiêzy spójnoœci (INF2NS_RUTKOWSKAK.SYS_C00260034) - nie znaleziono klucza nadrzêdnego
+Help: https://docs.oracle.com/error-help/db/ora-02291/ — wiersz: {'sesja_id': '7', 'prelegent_id': '7'}
+2025-05-24 01:52:44,291 ERROR: [sesje_prelegenci] ORA-02291: naruszono wiêzy spójnoœci (INF2NS_RUTKOWSKAK.SYS_C00260034) - nie znaleziono klucza nadrzêdnego
+Help: https://docs.oracle.com/error-help/db/ora-02291/ — wiersz: {'sesja_id': '8', 'prelegent_id': '8'}
+2025-05-24 01:52:44,449 ERROR: [sesje_prelegenci] ORA-02291: naruszono wiêzy spójnoœci (INF2NS_RUTKOWSKAK.SYS_C00260034) - nie znaleziono klucza nadrzêdnego
+Help: https://docs.oracle.com/error-help/db/ora-02291/ — wiersz: {'sesja_id': '9', 'prelegent_id': '9'}
+2025-05-24 01:52:44,561 ERROR: [sesje_prelegenci] ORA-02291: naruszono wiêzy spójnoœci (INF2NS_RUTKOWSKAK.SYS_C00260034) - nie znaleziono klucza nadrzêdnego
+Help: https://docs.oracle.com/error-help/db/ora-02291/ — wiersz: {'sesja_id': '10', 'prelegent_id': '10'}
+2025-05-24 01:52:44,663 ERROR: [sesje_prelegenci] ORA-02291: naruszono wiêzy spójnoœci (INF2NS_RUTKOWSKAK.SYS_C00260034) - nie znaleziono klucza nadrzêdnego
+Help: https://docs.oracle.com/error-help/db/ora-02291/ — wiersz: {'sesja_id': '11', 'prelegent_id': '11'}
+2025-05-24 01:52:44,784 ERROR: [sesje_prelegenci] ORA-02291: naruszono wiêzy spójnoœci (INF2NS_RUTKOWSKAK.SYS_C00260034) - nie znaleziono klucza nadrzêdnego
+Help: https://docs.oracle.com/error-help/db/ora-02291/ — wiersz: {'sesja_id': '12', 'prelegent_id': '12'}
+2025-05-24 01:52:44,887 ERROR: [sesje_prelegenci] ORA-02291: naruszono wiêzy spójnoœci (INF2NS_RUTKOWSKAK.SYS_C00260034) - nie znaleziono klucza nadrzêdnego
+Help: https://docs.oracle.com/error-help/db/ora-02291/ — wiersz: {'sesja_id': '13', 'prelegent_id': '13'}
+2025-05-24 01:52:44,999 ERROR: [sesje_prelegenci] ORA-02291: naruszono wiêzy spójnoœci (INF2NS_RUTKOWSKAK.SYS_C00260034) - nie znaleziono klucza nadrzêdnego
+Help: https://docs.oracle.com/error-help/db/ora-02291/ — wiersz: {'sesja_id': '14', 'prelegent_id': '14'}
+2025-05-24 01:52:45,107 ERROR: [sesje_prelegenci] ORA-02291: naruszono wiêzy spójnoœci (INF2NS_RUTKOWSKAK.SYS_C00260034) - nie znaleziono klucza nadrzêdnego
+Help: https://docs.oracle.com/error-help/db/ora-02291/ — wiersz: {'sesja_id': '15', 'prelegent_id': '15'}
+2025-05-24 01:52:45,235 ERROR: [sesje_prelegenci] ORA-02291: naruszono wiêzy spójnoœci (INF2NS_RUTKOWSKAK.SYS_C00260034) - nie znaleziono klucza nadrzêdnego
+Help: https://docs.oracle.com/error-help/db/ora-02291/ — wiersz: {'sesja_id': '16', 'prelegent_id': '16'}
+2025-05-24 01:52:45,351 ERROR: [sesje_prelegenci] ORA-02291: naruszono wiêzy spójnoœci (INF2NS_RUTKOWSKAK.SYS_C00260034) - nie znaleziono klucza nadrzêdnego
+Help: https://docs.oracle.com/error-help/db/ora-02291/ — wiersz: {'sesja_id': '17', 'prelegent_id': '17'}
+2025-05-24 01:52:45,459 ERROR: [sesje_prelegenci] ORA-02291: naruszono wiêzy spójnoœci (INF2NS_RUTKOWSKAK.SYS_C00260034) - nie znaleziono klucza nadrzêdnego
+Help: https://docs.oracle.com/error-help/db/ora-02291/ — wiersz: {'sesja_id': '18', 'prelegent_id': '18'}
+2025-05-24 01:52:45,585 ERROR: [sesje_prelegenci] ORA-02291: naruszono wiêzy spójnoœci (INF2NS_RUTKOWSKAK.SYS_C00260034) - nie znaleziono klucza nadrzêdnego
+Help: https://docs.oracle.com/error-help/db/ora-02291/ — wiersz: {'sesja_id': '19', 'prelegent_id': '19'}
+2025-05-24 01:52:45,713 ERROR: [sesje_prelegenci] ORA-02291: naruszono wiêzy spójnoœci (INF2NS_RUTKOWSKAK.SYS_C00260034) - nie znaleziono klucza nadrzêdnego
+Help: https://docs.oracle.com/error-help/db/ora-02291/ — wiersz: {'sesja_id': '20', 'prelegent_id': '20'}
+2025-05-24 01:52:45,831 ERROR: [sesje_prelegenci] ORA-02291: naruszono wiêzy spójnoœci (INF2NS_RUTKOWSKAK.SYS_C00260034) - nie znaleziono klucza nadrzêdnego
+Help: https://docs.oracle.com/error-help/db/ora-02291/ — wiersz: {'sesja_id': '21', 'prelegent_id': '21'}
+2025-05-24 01:52:45,952 ERROR: [sesje_prelegenci] ORA-02291: naruszono wiêzy spójnoœci (INF2NS_RUTKOWSKAK.SYS_C00260034) - nie znaleziono klucza nadrzêdnego
+Help: https://docs.oracle.com/error-help/db/ora-02291/ — wiersz: {'sesja_id': '22', 'prelegent_id': '22'}
+2025-05-24 01:52:46,079 ERROR: [sesje_prelegenci] ORA-02291: naruszono wiêzy spójnoœci (INF2NS_RUTKOWSKAK.SYS_C00260034) - nie znaleziono klucza nadrzêdnego
+Help: https://docs.oracle.com/error-help/db/ora-02291/ — wiersz: {'sesja_id': '23', 'prelegent_id': '23'}
+2025-05-24 01:52:46,191 ERROR: [sesje_prelegenci] ORA-02291: naruszono wiêzy spójnoœci (INF2NS_RUTKOWSKAK.SYS_C00260034) - nie znaleziono klucza nadrzêdnego
+Help: https://docs.oracle.com/error-help/db/ora-02291/ — wiersz: {'sesja_id': '24', 'prelegent_id': '24'}
+2025-05-24 01:52:46,319 ERROR: [sesje_prelegenci] ORA-02291: naruszono wiêzy spójnoœci (INF2NS_RUTKOWSKAK.SYS_C00260034) - nie znaleziono klucza nadrzêdnego
+Help: https://docs.oracle.com/error-help/db/ora-02291/ — wiersz: {'sesja_id': '25', 'prelegent_id': '25'}
+2025-05-24 01:52:46,442 ERROR: [sesje_prelegenci] ORA-02291: naruszono wiêzy spójnoœci (INF2NS_RUTKOWSKAK.SYS_C00260034) - nie znaleziono klucza nadrzêdnego
+Help: https://docs.oracle.com/error-help/db/ora-02291/ — wiersz: {'sesja_id': '26', 'prelegent_id': '26'}
+2025-05-24 01:52:46,555 ERROR: [sesje_prelegenci] ORA-02291: naruszono wiêzy spójnoœci (INF2NS_RUTKOWSKAK.SYS_C00260034) - nie znaleziono klucza nadrzêdnego
+Help: https://docs.oracle.com/error-help/db/ora-02291/ — wiersz: {'sesja_id': '27', 'prelegent_id': '27'}
+2025-05-24 01:52:46,667 ERROR: [sesje_prelegenci] ORA-02291: naruszono wiêzy spójnoœci (INF2NS_RUTKOWSKAK.SYS_C00260034) - nie znaleziono klucza nadrzêdnego
+Help: https://docs.oracle.com/error-help/db/ora-02291/ — wiersz: {'sesja_id': '28', 'prelegent_id': '28'}
+2025-05-24 01:52:46,797 ERROR: [sesje_prelegenci] ORA-02291: naruszono wiêzy spójnoœci (INF2NS_RUTKOWSKAK.SYS_C00260034) - nie znaleziono klucza nadrzêdnego
+Help: https://docs.oracle.com/error-help/db/ora-02291/ — wiersz: {'sesja_id': '29', 'prelegent_id': '29'}
+2025-05-24 01:52:46,910 ERROR: [sesje_prelegenci] ORA-02291: naruszono wiêzy spójnoœci (INF2NS_RUTKOWSKAK.SYS_C00260034) - nie znaleziono klucza nadrzêdnego
+Help: https://docs.oracle.com/error-help/db/ora-02291/ — wiersz: {'sesja_id': '30', 'prelegent_id': '30'}
+2025-05-24 01:52:46,977 INFO: ZA£ADOWANO: sesje_prelegenci.csv \u2192 D:\Studia\mgr\semestr 3\Zaawansowane Systemy Baz Danych\projekt\archive\sesje_prelegenci.csv.20250524015246
+2025-05-24 11:01:46,195 INFO: ZA£ADOWANO: konferencje.csv \u2192 D:\Studia\mgr\semestr 3\Zaawansowane Systemy Baz Danych\projekt\archive\konferencje.csv.20250524110146
+2025-05-24 11:01:46,253 INFO: Brak pliku: sale.csv
+2025-05-24 11:01:46,253 INFO: Brak pliku: sesje.csv
+2025-05-24 11:01:48,242 INFO: ZA£ADOWANO: prelegenci.csv \u2192 D:\Studia\mgr\semestr 3\Zaawansowane Systemy Baz Danych\projekt\archive\prelegenci.csv.20250524110148
+2025-05-24 11:01:50,495 INFO: ZA£ADOWANO: uczestnicy.csv \u2192 D:\Studia\mgr\semestr 3\Zaawansowane Systemy Baz Danych\projekt\archive\uczestnicy.csv.20250524110150
+2025-05-24 11:01:50,495 INFO: Brak pliku: rejestracje.csv
+2025-05-24 11:01:50,495 INFO: Brak pliku: sesje_prelegenci.csv

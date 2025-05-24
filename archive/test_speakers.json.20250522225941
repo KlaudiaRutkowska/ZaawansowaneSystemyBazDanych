@@ -1,0 +1,12 @@
+  [
+  {
+    "imie": "Anna",
+    "nazwisko": "Nowak",
+    "biografia": "Ekspertka od baz danych"
+  },
+  {
+    "imie": "Piotr",
+    "nazwisko": "Zieliński",
+    "biografia": "Specjalista AI"
+  }
+]
